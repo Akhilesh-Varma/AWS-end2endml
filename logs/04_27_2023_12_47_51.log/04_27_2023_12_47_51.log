@@ -1,0 +1,10 @@
+[ 2023-04-27 12:47:52,798 ] 25 root - INFO - Entered the data ingestion method or component
+[ 2023-04-27 12:47:52,802 ] 28 root - INFO - Read the dataset as dataframe
+[ 2023-04-27 12:47:52,807 ] 33 root - INFO - Train test split initiated
+[ 2023-04-27 12:47:52,814 ] 41 root - INFO - Data Ingestion completed
+[ 2023-04-27 12:47:52,818 ] 87 root - INFO - Read train and test completed
+[ 2023-04-27 12:47:52,818 ] 88 root - INFO - Obtaining preprocessing obtain
+[ 2023-04-27 12:47:52,818 ] 47 root - INFO - Numerical columns standard scaling completed
+[ 2023-04-27 12:47:52,818 ] 57 root - INFO - Categorical columns encoding completed
+[ 2023-04-27 12:47:52,818 ] 60 root - INFO - Numerical Columns:{numerical_columns}
+[ 2023-04-27 12:47:52,818 ] 61 root - INFO - Categorical Columns:{categorical_columns}

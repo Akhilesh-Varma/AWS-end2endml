@@ -1,0 +1,13 @@
+prefix=/Users/akhileshvarmabhupathiraju/Documents/end2endml/venv
+exec_prefix=/Users/akhileshvarmabhupathiraju/Documents/end2endml/venv
+libdir=/Users/akhileshvarmabhupathiraju/Documents/end2endml/venv/lib
+sharedlibdir=/Users/akhileshvarmabhupathiraju/Documents/end2endml/venv/lib
+includedir=/Users/akhileshvarmabhupathiraju/Documents/end2endml/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
