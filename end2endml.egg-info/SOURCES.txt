@@ -5,6 +5,7 @@ end2endml.egg-info/SOURCES.txt
 end2endml.egg-info/dependency_links.txt
 end2endml.egg-info/requires.txt
 end2endml.egg-info/top_level.txt
+<<<<<<< HEAD
 src/__init__.py
 src/exception.py
 src/logger.py
@@ -16,3 +17,6 @@ src/components/model_trainer.py
 src/pipeline/__init__.py
 src/pipeline/predict_pipeline.py
 src/pipeline/train_pipeline.py
+=======
+src/__init__.py
+>>>>>>> main
