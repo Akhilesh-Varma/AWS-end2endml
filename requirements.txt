@@ -1,8 +1,13 @@
 pandas
 numpy
 seaborn
+<<<<<<< HEAD
 matplotlib
 scikit-learn
 catboost
 xgboost
+dill
 # -e .
+=======
+-e .
+>>>>>>> main
