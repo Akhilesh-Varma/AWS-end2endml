@@ -10,8 +10,8 @@ class PredictPipeline:
 
     def predict(self, features):
         try:
-            model_path = 'artifacts\model.pkl'
-            preprocess_path = 'artifacts\preprocessor.pkl'
+            model_path = 'artifacts/model.pkl'
+            preprocess_path = 'artifacts/preprocessor.pkl'
             model = load_object(file_path=model_path)
             preprocess = load_object(file_path=preprocess_path)
             data_scaled = preprocess.transform(features)
@@ -46,19 +46,19 @@ class CustomData:
 
         self.writing_score = writing_score
 
-def get_data_as_data_frame(self):
-    try:
-        custom_data_input_dict = {
-            "gender": [self.gender],
-            "race_ethnicity": [self.race_ethnicity],
-            "parental_level_of_education": [self.parental_level_of_education],
-            "lunch": [self.lunch],
-            "test_preparation_course": [self.test_preparation_course],
-            "reading_score": [self.reading_score],
-            "writing_score": [self.writing_score],
-        }
+    def get_data_as_data_frame(self):
+        try:
+            custom_data_input_dict = {
+                "gender": [self.gender],
+                "race_ethnicity": [self.race_ethnicity],
+                "parental_level_of_education": [self.parental_level_of_education],
+                "lunch": [self.lunch],
+                "test_preparation_course": [self.test_preparation_course],
+                "reading_score": [self.reading_score],
+                "writing_score": [self.writing_score],
+            }
 
-        return pd.DataFrame(custom_data_input_dict)
+            return pd.DataFrame(custom_data_input_dict)
 
-    except Exception as e:
-        raise CustomException(e, sys)
+        except Exception as e:
+            raise CustomException(e, sys)

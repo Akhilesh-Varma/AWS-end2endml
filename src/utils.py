@@ -3,6 +3,7 @@ import dill
 import numpy as np
 import pandas as pd
 import sys
+import pickle
 
 from src.exception import CustomException
 from sklearn.metrics import r2_score
