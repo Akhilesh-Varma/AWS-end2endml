@@ -16,7 +16,7 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
 
-# from src.exception import CustomException
+from src.exception import CustomException
 from src.logger import logging 
 from src.utils import save_object
 from src.utils import evaluate_model
@@ -46,7 +46,7 @@ class ModelTrainer:
                 "K-nearest Regressor" : KNeighborsRegressor(),
                 "XGB Regressor": XGBRegressor(),
                 "CatBoosting Regressor" : CatBoostRegressor(verbose= False),
-                "AdaBoost Classifier" : AdaBoostRegressor(),
+                "AdaBoost Regressor" : AdaBoostRegressor(),
 
             }
             params = {
@@ -70,7 +70,11 @@ class ModelTrainer:
                     'n_estimators': [8,16,32,64,128,256]
                 },
                 "Linear Regression":{},
-                "XGBRegressor":{
+                "K-nearest Regressor":{
+                    'n_neighbors':[5,9,15,21],
+                    'leaf_size': [22,30,64,128]
+                },
+                "XGB Regressor":{
                     'learning_rate':[.1,.01,.05,.001],
                     'n_estimators': [8,16,32,64,128,256]
                 },
@@ -87,7 +91,7 @@ class ModelTrainer:
                 
             }
 
-            model_report: dict = evaluate_model(X_train= X_train, y_train = y_train, X_test = X_test, y_test = y_test, models = models, params = params)
+            model_report: dict = evaluate_model(X_train= X_train, y_train = y_train, X_test = X_test, y_test = y_test, models = models, param = params)
 
 
 
