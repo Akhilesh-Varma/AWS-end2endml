@@ -9,7 +9,7 @@ application = Flask(__name__)
 
 # app = application
 
-# Homepage route
+# Homepage rout
 
 @application.route('/')
 def index():
